@@ -1,0 +1,17 @@
+{
+  "name": "conversion-rates",
+  "version": "1.0.0",
+  "description": "API for currency conversion rates",
+  "main": "server.js",
+  "author": "Simbarashe Tanaka Kuwanda",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "js-logger": "^1.6.1",
+    "morgan": "^1.10.0"
+  }
+}

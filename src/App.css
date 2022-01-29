@@ -1,0 +1,120 @@
+/* import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 10px;
+  background: #afa8ff;
+}
+
+.container{
+  width: 600px;
+  padding: 30px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container header{
+  font-weight: 500;
+  text-align: center;
+  font-size: 30px;
+}
+
+.currency-row{
+  margin-bottom: 1rem;
+}
+
+input, select {
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+
+input, select{
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+
+input{
+  width: 60%;
+  margin-right: 1rem;
+}
+
+select {
+  width: 100px;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+  padding: auto;
+  -webkit-appearance: none; /* remove default arrow */
+  -moz-appearance: none; /* remove default arrow */
+  text-indent: 1px; /* remove default arrow */
+  text-overflow: '' /* remove default arrow */
+}
+
+input:focus{
+  padding: 0 15px;
+  border: 2px solid #675AFE;
+}
+
+/* css based custom arrow for select tag */
+select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* remove default arrow */
+select::-ms-expand {
+  display: none;
+}
+
