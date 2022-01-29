@@ -5,13 +5,23 @@
   "main": "server.js",
   "author": "Simbarashe Tanaka Kuwanda",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js",
+    "client": "yarn --cwd ../ start",
+    "clientInstall": "yarn --cwd ../",
+    "serverInstall": "yarn",
+    "setup": "concurrently \"yarn serverInstall\" \"yarn clientInstall\"",
+    "launch": "concurrently \"yarn start\" \"yarn client\""
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2"
   },
   "devDependencies": {
     "colors": "^1.4.0",
+    "concurrently": "^7.0.0",
     "js-logger": "^1.6.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
   }
 }
